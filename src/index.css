@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-neon-pink: #ff00ff;
+  --color-neon-blue: #00f2ff;
+  --color-neon-green: #39ff14;
+  --color-neon-purple: #bc13fe;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-100 font-sans antialiased;
+  }
+}
+
+.neon-border-pink {
+  box-shadow: 0 0 5px var(--color-neon-pink), 0 0 15px var(--color-neon-pink);
+}
+
+.neon-border-blue {
+  box-shadow: 0 0 5px var(--color-neon-blue), 0 0 15px var(--color-neon-blue);
+}
+
+.neon-border-green {
+  box-shadow: 0 0 5px var(--color-neon-green), 0 0 15px var(--color-neon-green);
+}
+
+.neon-text-pink {
+  text-shadow: 0 0 5px var(--color-neon-pink), 0 0 10px var(--color-neon-pink);
+}
+
+.neon-text-blue {
+  text-shadow: 0 0 5px var(--color-neon-blue), 0 0 10px var(--color-neon-blue);
+}
+
+.neon-text-green {
+  text-shadow: 0 0 5px var(--color-neon-green), 0 0 10px var(--color-neon-green);
+}
